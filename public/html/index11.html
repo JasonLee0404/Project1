@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery practice/prac3 task 1.2</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!--This is one of the reason you should host it locally, so
+		you could include your script in a seperate files-->
+		<!--this is how you can make an image disappear by clicking
+		on it-->
+		<script>
+			$(document).ready(function(){
+				$("img").click(function(){
+					$("#para1").hide();
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<h1>Hello World</h1>
+		<img src="https://ginnodangan.files.wordpress.com/2011/04/gintamaop9-01.jpg" id="para1">
+		
+		<button>Click here to hide Gintama</button>
+	</body>
+</html>
